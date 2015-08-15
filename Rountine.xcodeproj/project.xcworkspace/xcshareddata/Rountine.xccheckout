@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F5436E34-9193-4E9C-B81C-3F1573954B21</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Rountine</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CEA306BD3B8808532E293BB562647D46D5D2881F</key>
+		<string>https://github.com/gbfansheng/Rountine.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Rountine.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CEA306BD3B8808532E293BB562647D46D5D2881F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gbfansheng/Rountine.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CEA306BD3B8808532E293BB562647D46D5D2881F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CEA306BD3B8808532E293BB562647D46D5D2881F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Rountine</string>
+		</dict>
+	</array>
+</dict>
+</plist>
