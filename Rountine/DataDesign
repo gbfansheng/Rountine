@@ -1,0 +1,5 @@
+1.每个step by step 任务都会有一个bonus，任务包（package）包含一系列bonus
+2.每天任务，每天都会有一个bonus，
+3.missiondetail展现的是任务包当前任务
+4、missionlist展现的是任务包
+5、missioncreate是创建任务包

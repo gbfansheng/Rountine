@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Mission" representedClassName="Mission" syncable="YES">
+        <attribute name="bonus" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="reminder" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="status" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mission" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="package" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sequence" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="MissionRecord" representedClassName="MissionRecord" syncable="YES">
+        <attribute name="bonus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mission" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="package" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Package" representedClassName="Package" syncable="YES">
+        <attribute name="currentsequence" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="package" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="totaltimes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
         <element name="Mission" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="MissionRecord" positionX="-63" positionY="18" width="128" height="103"/>
+        <element name="Package" positionX="-27" positionY="54" width="128" height="103"/>
     </elements>
 </model>

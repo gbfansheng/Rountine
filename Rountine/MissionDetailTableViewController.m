@@ -11,8 +11,11 @@
 #import "DetailTableViewCell.h"
 #import "MissionDetailContentTableViewCell.h"
 #import "MissionAlertTableViewCell.h"
-
+#import "CoreDataManager.h"
 @interface MissionDetailTableViewController ()
+{
+    CoreDataManager* _coreDataManager;
+}
 @property (strong, nonatomic) NSArray* contentArray;
 @end
 
@@ -21,7 +24,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.contentArray = @[ @[ @"标题" ], @[ @"本次完成奖励", @"累计奖励", @"完成情况", @"详细内容" ], @[ @"开启提醒", @"提醒时间" ] ];
+    self.contentArray = @[ @[ @"标题" ], @[ @"本次完成奖励", @"累计奖励", @"完成情况", @"详细内容" ], @[ @"开启提醒", @"提醒时间", @"重复", @"结束重复"] ];
+    _coreDataManager = [CoreDataManager sharedCoreDataManager];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
 
@@ -69,7 +73,7 @@
         cell.tagLabel.text = @"任务内容";
         cell.contentTextView.text = @"这里是内容";
         return cell;
-    } else if (indexPath.section == 1 && indexPath.row == 1) {
+    } else if (indexPath.section == 2 && indexPath.row == 0) {
         MissionAlertTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"alert"];
         if (cell == nil) {
             UINib* nib = [UINib nibWithNibName:@"MissionAlertTableViewCell" bundle:nil];
@@ -78,6 +82,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"alert"];
         cell.tagLabel.text = @"开启提醒";
         cell.contentSwitch.on = NO;
+        return cell;
     }
     else {
         DetailTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"detail"];
@@ -105,50 +110,22 @@
     if ((indexPath.section == 1) && (indexPath.row == 1)) {
         AccumulatedBonusTableViewController* accumulatedBonusTableViewController = [[AccumulatedBonusTableViewController alloc] init];
         [self.navigationController pushViewController:accumulatedBonusTableViewController animated:YES];
+    } else if (indexPath.section == 1 && indexPath.row == 2) {
+        UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"This is alertView" delegate:self cancelButtonTitle:@"Delete" otherButtonTitles:@"Add", nil];
+        [alertView show];
+        
     }
 }
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSArray* array = [_coreDataManager dataFetchMissions];
+    if (buttonIndex == 0) {
+        
+    } else if (buttonIndex == 1){
+        [_coreDataManager insertMissionWithTitle:@"m" detail:@"detail" reminder:1 time:[NSDate date] status:YES];
+    }
+    NSLog(@"Array count :%ld",array.count);
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

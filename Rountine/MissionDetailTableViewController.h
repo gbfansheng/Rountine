@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MissionDetailTableViewController : UITableViewController
+@interface MissionDetailTableViewController : UITableViewController <UIAlertViewDelegate>
 
 @end
