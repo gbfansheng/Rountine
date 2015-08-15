@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C14CDCA1B7EDC70008EF6C2 /* MissionAlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14CDC81B7EDC70008EF6C2 /* MissionAlertTableViewCell.m */; };
+		9C14CDCB1B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C14CDC91B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib */; };
 		9CE453E91B6E4ABC0099F5C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE453E81B6E4ABC0099F5C8 /* main.m */; };
 		9CE453EC1B6E4ABC0099F5C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE453EB1B6E4ABC0099F5C8 /* AppDelegate.m */; };
 		9CE453EF1B6E4ABC0099F5C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE453EE1B6E4ABC0099F5C8 /* ViewController.m */; };
@@ -43,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C14CDC71B7EDC70008EF6C2 /* MissionAlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionAlertTableViewCell.h; sourceTree = "<group>"; };
+		9C14CDC81B7EDC70008EF6C2 /* MissionAlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionAlertTableViewCell.m; sourceTree = "<group>"; };
+		9C14CDC91B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionAlertTableViewCell.xib; sourceTree = "<group>"; };
 		9CE453E31B6E4ABC0099F5C8 /* Rountine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rountine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE453E71B6E4ABC0099F5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE453E81B6E4ABC0099F5C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -205,6 +210,9 @@
 				9CF6C9A01B778E2F008FA1E3 /* MissionDetailContentTableViewCell.h */,
 				9CF6C9A11B778E2F008FA1E3 /* MissionDetailContentTableViewCell.m */,
 				9CF6C9A21B778E2F008FA1E3 /* MissionDetailContentTableViewCell.xib */,
+				9C14CDC71B7EDC70008EF6C2 /* MissionAlertTableViewCell.h */,
+				9C14CDC81B7EDC70008EF6C2 /* MissionAlertTableViewCell.m */,
+				9C14CDC91B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -292,6 +300,7 @@
 				9CE453F21B6E4ABC0099F5C8 /* Main.storyboard in Resources */,
 				9CF6C9A41B778E2F008FA1E3 /* MissionDetailContentTableViewCell.xib in Resources */,
 				9CE453F71B6E4ABD0099F5C8 /* LaunchScreen.xib in Resources */,
+				9C14CDCB1B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib in Resources */,
 				9CF6C99A1B777EDC008FA1E3 /* DetailTableViewCell.xib in Resources */,
 				9CE453F41B6E4ABD0099F5C8 /* Images.xcassets in Resources */,
 			);
@@ -312,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CE454141B6E4EDC0099F5C8 /* CoreDataManager.m in Sources */,
+				9C14CDCA1B7EDC70008EF6C2 /* MissionAlertTableViewCell.m in Sources */,
 				9CF6C9741B72F0FB008FA1E3 /* MIssionDetailViewController.m in Sources */,
 				9CE454111B6E4EAB0099F5C8 /* Mission.m in Sources */,
 				9CE454171B6E50490099F5C8 /* MissionListTableViewController.m in Sources */,

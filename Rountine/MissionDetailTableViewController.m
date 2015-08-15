@@ -10,6 +10,7 @@
 #import "AccumulatedBonusTableViewController.h"
 #import "DetailTableViewCell.h"
 #import "MissionDetailContentTableViewCell.h"
+#import "MissionAlertTableViewCell.h"
 
 @interface MissionDetailTableViewController ()
 @property (strong, nonatomic) NSArray* contentArray;
@@ -59,16 +60,32 @@
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
     if ((indexPath.section == 1) && (indexPath.row == 3)) {
-        MissionDetailContentTableViewCell* missionDetailContentTableViewCell = [[[NSBundle mainBundle] loadNibNamed:@"MissionDetailContentTableViewCell" owner:self options:nil] lastObject];
-        missionDetailContentTableViewCell.tagLabel.text = @"任务内容";
-        missionDetailContentTableViewCell.contentTextView.text = @"这里是内容";
-        return missionDetailContentTableViewCell;
+        MissionDetailContentTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"detailContent"];
+        if (cell == nil) {
+            UINib* nib = [UINib nibWithNibName:@"MissionDetailContentTableViewCell" bundle:nil];
+            [tableView registerNib:nib forCellReuseIdentifier:@"detailContent"];
+        }
+        cell= [tableView dequeueReusableCellWithIdentifier:@"detailContent"];
+        cell.tagLabel.text = @"任务内容";
+        cell.contentTextView.text = @"这里是内容";
+        return cell;
+    } else if (indexPath.section == 1 && indexPath.row == 1) {
+        MissionAlertTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"alert"];
+        if (cell == nil) {
+            UINib* nib = [UINib nibWithNibName:@"MissionAlertTableViewCell" bundle:nil];
+            [tableView registerNib:nib forCellReuseIdentifier:@"alert"];
+        }
+        cell = [tableView dequeueReusableCellWithIdentifier:@"alert"];
+        cell.tagLabel.text = @"开启提醒";
+        cell.contentSwitch.on = NO;
     }
     else {
-        DetailTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"detailXib"];
+        DetailTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"detail"];
         if (cell == nil) {
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"DetailTableViewCell" owner:self options:nil] lastObject];
+            UINib* nib = [UINib nibWithNibName:@"DetailTableViewCell" bundle:nil];
+            [tableView registerNib:nib forCellReuseIdentifier:@"detail"];
         }
+        cell = [tableView dequeueReusableCellWithIdentifier:@"detail"];
         if ((indexPath.section == 0) && (indexPath.row == 0)) {
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.accessoryType = UITableViewCellAccessoryNone;
