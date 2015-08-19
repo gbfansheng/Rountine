@@ -119,13 +119,13 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSArray* array = [_coreDataManager dataFetchMissions];
-    if (buttonIndex == 0) {
-        
-    } else if (buttonIndex == 1){
-        [_coreDataManager insertMissionWithTitle:@"m" detail:@"detail" reminder:1 time:[NSDate date] status:YES];
-    }
-    NSLog(@"Array count :%ld",array.count);
+//    NSArray* array = [_coreDataManager dataFetchMissions];
+//    if (buttonIndex == 0) {
+//        
+//    } else if (buttonIndex == 1){
+//        [_coreDataManager insertMissionWithTitle:@"m" detail:@"detail" reminder:1 time:[NSDate date] status:YES];
+//    }
+//    NSLog(@"Array count :%ld",array.count);
 }
 
 @end

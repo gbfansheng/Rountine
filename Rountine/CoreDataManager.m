@@ -112,7 +112,7 @@ static CoreDataManager* _instance;
 - (NSArray*)fetchWithEntityName:(NSString*)entityName
                       predicate:(NSPredicate*)predicate
 {
-    NSLog(@"fetch MissionWithSequence");
+    NSLog(@"fetch WithEntityName:");
     NSManagedObjectContext* context = [self managedObjectContext];
     NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
     fetchRequest.predicate = predicate;
@@ -155,7 +155,7 @@ static CoreDataManager* _instance;
     return resultString;
 }
 
-- (NSString*)deletePackage:(NSManagedObject*)packageObj
+- (NSString*)deletePackage:(Package*)packageObj
 {
     NSString* package = [packageObj valueForKey:@"package"];
     [self deleteNSManagedObject:packageObj];
@@ -203,7 +203,7 @@ static CoreDataManager* _instance;
     return resultString;
 }
 
-- (NSString*)deleteMission:(NSManagedObject*)missionObj
+- (NSString*)deleteMission:(Mission*)missionObj
 {
     NSString* mission = [missionObj valueForKey:@"mission"];
     [self deleteNSManagedObject:missionObj];
@@ -244,7 +244,7 @@ static CoreDataManager* _instance;
     return resultString;
 }
 
-- (NSString*)deleteMissionRecord:(NSManagedObject*)missionRecord
+- (NSString*)deleteMissionRecord:(MissionRecord*)missionRecord
 {
     [self deleteNSManagedObject:missionRecord];
     return @"删除任务记录成功";
