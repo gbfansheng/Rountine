@@ -25,16 +25,39 @@
 - (NSArray*)fetchWithEntityName:(NSString*)entityName
                       predicate:(NSPredicate*)predicate;
 
-- (NSString*)insertPackage:(Package*)package;
+- (NSString*)insertPackageWithPackage:(NSString *)package
+                      currentSequence:(NSNumber *)currentSequence
+                           totalTimes:(NSNumber *)totalTimes
+                               status:(NSNumber *)status;
 - (NSString*)deletePackage:(NSManagedObject*)packageObj;
-- (NSString*)updatePackageWithOldObject:(NSManagedObject*)object package:(Package*)package;
+- (NSString*)updatePackageWithOldObject:(NSManagedObject*)object
+                         withNewPackage:(NSString *)package
+                        currentSequence:(NSNumber *)currentSequence
+                             totalTimes:(NSNumber *)totalTimes
+                                 status:(NSNumber *)status;
 
-- (NSString*)insertMission:(Mission*)mission;
+- (NSString*)insertMissionWithDetail:(NSString *)detail
+                             package:(NSString *)package
+                               bonus:(NSString *)bonus
+                             mission:(NSString *)mission
+                            sequence:(NSNumber *)sequence;
 - (NSString*)deleteMission:(NSManagedObject*)missionObj;
-- (NSString*)updateMissionWithOldObject:(NSManagedObject*)object newMission:(Mission*)mission;
+- (NSString*)updateMissionWithOldObject:(NSManagedObject*)object
+                                 detail:(NSString *)detail
+                                package:(NSString *)package
+                                  bonus:(NSString *)bonus
+                                mission:(NSString *)mission
+                               sequence:(NSNumber *)sequence;
 
-- (NSString*)insertMissionRecord:(MissionRecord*)record;
+- (NSString*)insertMissionRecordWith:(NSString *)mission
+                                date:(NSDate *)time
+                             package:(NSString *)package
+                               bonus:(NSString *)bonus;
 - (NSString*)deleteMissionRecord:(NSManagedObject*)missionRecord;
-- (NSString*)updateMissionRecordWithOldObject:(NSManagedObject*)object newRecord:(MissionRecord*)record;
+- (NSString*)updateMissionRecordWithOldObject:(NSManagedObject*)object
+                                      mission:(NSString *)mission
+                                         time:(NSDate *)time
+                                      package:(NSString *)package
+                                        bonus:(NSString *)bonus;
 
 @end

@@ -37,13 +37,7 @@
 
 - (void)barButtonItemClick
 {
-    Package* package = [[Package alloc] init];
-    package.package = _packageTextView.text;
-    package.currentsequence = 0;
-    package.totaltimes = [[NSNumber alloc] initWithInt:-1];
-    package.status = 0;
-    
-    [_coreDataManager insertPackage:package];
+    [_coreDataManager insertPackageWithPackage:_packageTextView.text currentSequence:0 totalTimes:[[NSNumber alloc] initWithInt:-1] status:0];
     [self.navigationController popViewControllerAnimated:YES];
 }
 /*

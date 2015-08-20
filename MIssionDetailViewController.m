@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 fan. All rights reserved.
 //
 
-#import "MIssionDetailViewController.h"
+#import "MissionDetailViewController.h"
 #import "EventView.h"
 #import "CircleView.h"
 
-@interface MIssionDetailViewController ()
+@interface MissionDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIControl *reminderView;
 @property (weak, nonatomic) IBOutlet UIControl *bonusView;
 @property (weak, nonatomic) IBOutlet UIControl *detailView;
@@ -24,7 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel* titleTagLabel;
 @end
 
-@implementation MIssionDetailViewController
+@implementation MissionDetailViewController
 
 - (void)viewDidLoad
 {

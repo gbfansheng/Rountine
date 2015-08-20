@@ -127,7 +127,10 @@ static CoreDataManager* _instance;
     return fetchedObjects;
 }
 
-- (NSString*)insertPackage:(Package*)package
+- (NSString*)insertPackageWithPackage:(NSString *)package
+                      currentSequence:(NSNumber *)currentSequence
+                           totalTimes:(NSNumber *)totalTimes
+                               status:(NSNumber *)status
 {
     NSLog(@"insert package");
     NSString* resultString;
@@ -136,9 +139,10 @@ static CoreDataManager* _instance;
         NSManagedObjectContext* context = [self managedObjectContext];
         NSManagedObject* packageObj = [NSEntityDescription insertNewObjectForEntityForName:@"Package"
                                                                     inManagedObjectContext:context];
-        [packageObj setValue:package.package forKey:@"package"];
-        [packageObj setValue:package.currentsequence forKey:@"currentsequence"];
-        [packageObj setValue:package.totaltimes forKey:@"totaltimes"];
+        [packageObj setValue:package forKey:@"package"];
+        [packageObj setValue:currentSequence forKey:@"currentsequence"];
+        [packageObj setValue:totalTimes forKey:@"totaltimes"];
+        [packageObj setValue:status forKey:@"status"];
 
         NSError* error;
         if (![context save:&error]) {
@@ -166,27 +170,35 @@ static CoreDataManager* _instance;
     return @"删除任务包成功";
 }
 
-- (NSString*)updatePackageWithOldObject:(NSManagedObject*)object package:(Package*)package
+- (NSString*)updatePackageWithOldObject:(NSManagedObject*)object
+                         withNewPackage:(NSString *)package
+                        currentSequence:(NSNumber *)currentSequence
+                             totalTimes:(NSNumber *)totalTimes
+                                 status:(NSNumber *)status
 {
     [self deletePackage:object];
-    [self insertPackage:package];
+    [self insertPackageWithPackage:package currentSequence:currentSequence totalTimes:totalTimes status:status];
     return @"更新任务包成功";
 }
 
-- (NSString*)insertMission:(Mission*)mission
+- (NSString*)insertMissionWithDetail:(NSString *)detail
+                       package:(NSString *)package
+                         bonus:(NSString *)bonus
+                       mission:(NSString *)mission
+                      sequence:(NSNumber *)sequence
 {
     NSLog(@"insert mission");
     NSString* resultString;
-    NSArray* array = [self fetchWithEntityName:@"Mission" predicate:[NSPredicate predicateWithFormat:@"mission == %@", mission.mission]];
+    NSArray* array = [self fetchWithEntityName:@"Mission" predicate:[NSPredicate predicateWithFormat:@"mission == %@", mission]];
     if (array == nil || array.count == 0) {
         NSManagedObjectContext* context = [self managedObjectContext];
         NSManagedObject* missionObj = [NSEntityDescription insertNewObjectForEntityForName:@"Mission"
                                                                     inManagedObjectContext:context];
-        [missionObj setValue:mission.package forKey:@"package"];
-        [missionObj setValue:mission.mission forKey:@"mission"];
-        [missionObj setValue:mission.detail forKey:@"detail"];
-        [missionObj setValue:mission.bonus forKey:@"bonus"];
-        [missionObj setValue:mission.sequence forKey:@"sequence"];
+        [missionObj setValue:package forKey:@"package"];
+        [missionObj setValue:mission forKey:@"mission"];
+        [missionObj setValue:detail forKey:@"detail"];
+        [missionObj setValue:bonus forKey:@"bonus"];
+        [missionObj setValue:sequence forKey:@"sequence"];
 
         NSError* error;
         if (![context save:&error]) {
@@ -214,24 +226,32 @@ static CoreDataManager* _instance;
     return @"删除任务成功";
 }
 
-- (NSString*)updateMissionWithOldObject:(NSManagedObject*)object newMission:(Mission*)mission
+- (NSString*)updateMissionWithOldObject:(NSManagedObject*)object
+                                 detail:(NSString *)detail
+                                package:(NSString *)package
+                                  bonus:(NSString *)bonus
+                                mission:(NSString *)mission
+                               sequence:(NSNumber *)sequence
 {
     [self deleteMission:object];
-    [self insertMission:mission];
+    [self insertMissionWithDetail:detail package:package bonus:bonus mission:mission sequence:sequence];
     return @"修改任务成功";
 }
 
-- (NSString*)insertMissionRecord:(MissionRecord*)record
+- (NSString*)insertMissionRecordWith:(NSString *)mission
+                                date:(NSDate *)time
+                             package:(NSString *)package
+                               bonus:(NSString *)bonus
 {
     NSLog(@"insert missionRecord");
     NSString* resultString;
     NSManagedObjectContext* context = [self managedObjectContext];
     NSManagedObject* recordObj = [NSEntityDescription insertNewObjectForEntityForName:@"MissionRecord"
                                                                inManagedObjectContext:context];
-    [recordObj setValue:record.package forKey:@"package"];
-    [recordObj setValue:record.mission forKey:@"mission"];
-    [recordObj setValue:record.time forKey:@"time"];
-    [recordObj setValue:record.bonus forKey:@"bonus"];
+    [recordObj setValue:package forKey:@"package"];
+    [recordObj setValue:mission forKey:@"mission"];
+    [recordObj setValue:time forKey:@"time"];
+    [recordObj setValue:bonus forKey:@"bonus"];
 
     NSError* error;
     if (![context save:&error]) {
@@ -250,10 +270,14 @@ static CoreDataManager* _instance;
     return @"删除任务记录成功";
 }
 
-- (NSString*)updateMissionRecordWithOldObject:(NSManagedObject*)object newRecord:(MissionRecord*)record
+- (NSString*)updateMissionRecordWithOldObject:(NSManagedObject*)object
+                                      mission:(NSString *)mission
+                                         time:(NSDate *)time
+                                      package:(NSString *)package
+                                        bonus:(NSString *)bonus
 {
     [self deleteMissionRecord:object];
-    [self insertMissionRecord:record];
+    [self insertMissionRecordWith:mission date:time package:package bonus:bonus];
     return @"更新记录成功";
 }
 

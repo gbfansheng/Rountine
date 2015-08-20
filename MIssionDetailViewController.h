@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MIssionDetailViewController : UIViewController
+@interface MissionDetailViewController : UIViewController
 
 @end

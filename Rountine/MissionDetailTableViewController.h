@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Package.h"
 @interface MissionDetailTableViewController : UITableViewController <UIAlertViewDelegate>
-
+@property (strong,nonatomic) Package* package;
 @end

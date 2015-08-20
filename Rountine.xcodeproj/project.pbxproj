@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DE298DF1B85EBF800A48602 /* MissionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE298DE1B85EBF800A48602 /* MissionListTableViewController.m */; };
+		0DE298E21B85F23500A48602 /* MissionAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE298E11B85F23500A48602 /* MissionAddViewController.m */; };
 		9C14CDCA1B7EDC70008EF6C2 /* MissionAlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14CDC81B7EDC70008EF6C2 /* MissionAlertTableViewCell.m */; };
 		9C14CDCB1B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C14CDC91B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib */; };
 		9C14CDD01B7F1D32008EF6C2 /* DataDesign in Resources */ = {isa = PBXBuildFile; fileRef = 9C14CDCF1B7F1D32008EF6C2 /* DataDesign */; };
@@ -26,7 +28,7 @@
 		9CE4540E1B6E4C6C0099F5C8 /* Mission.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4540C1B6E4C6C0099F5C8 /* Mission.xcdatamodeld */; };
 		9CE454141B6E4EDC0099F5C8 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE454131B6E4EDC0099F5C8 /* CoreDataManager.m */; };
 		9CE454171B6E50490099F5C8 /* PackageListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE454161B6E50490099F5C8 /* PackageListTableViewController.m */; };
-		9CF6C9741B72F0FB008FA1E3 /* MIssionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6C9731B72F0FB008FA1E3 /* MIssionDetailViewController.m */; };
+		9CF6C9741B72F0FB008FA1E3 /* MissionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6C9731B72F0FB008FA1E3 /* MissionDetailViewController.m */; };
 		9CF6C9771B72FB00008FA1E3 /* NotificationSettingTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6C9761B72FB00008FA1E3 /* NotificationSettingTableTableViewController.m */; };
 		9CF6C97D1B730A31008FA1E3 /* EventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6C97C1B730A31008FA1E3 /* EventView.m */; };
 		9CF6C9891B7612EA008FA1E3 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6C9881B7612EA008FA1E3 /* CircleView.m */; };
@@ -50,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DE298DD1B85EBF800A48602 /* MissionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionListTableViewController.h; sourceTree = "<group>"; };
+		0DE298DE1B85EBF800A48602 /* MissionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionListTableViewController.m; sourceTree = "<group>"; };
+		0DE298E01B85F23500A48602 /* MissionAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionAddViewController.h; sourceTree = "<group>"; };
+		0DE298E11B85F23500A48602 /* MissionAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionAddViewController.m; sourceTree = "<group>"; };
 		9C14CDC71B7EDC70008EF6C2 /* MissionAlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionAlertTableViewCell.h; sourceTree = "<group>"; };
 		9C14CDC81B7EDC70008EF6C2 /* MissionAlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionAlertTableViewCell.m; sourceTree = "<group>"; };
 		9C14CDC91B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionAlertTableViewCell.xib; sourceTree = "<group>"; };
@@ -83,8 +89,8 @@
 		9CE454131B6E4EDC0099F5C8 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		9CE454151B6E50490099F5C8 /* PackageListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageListTableViewController.h; sourceTree = "<group>"; };
 		9CE454161B6E50490099F5C8 /* PackageListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageListTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		9CF6C9721B72F0FB008FA1E3 /* MIssionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIssionDetailViewController.h; path = ../MIssionDetailViewController.h; sourceTree = "<group>"; };
-		9CF6C9731B72F0FB008FA1E3 /* MIssionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MIssionDetailViewController.m; path = ../MIssionDetailViewController.m; sourceTree = "<group>"; };
+		9CF6C9721B72F0FB008FA1E3 /* MissionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MissionDetailViewController.h; path = ../MissionDetailViewController.h; sourceTree = "<group>"; };
+		9CF6C9731B72F0FB008FA1E3 /* MissionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MissionDetailViewController.m; path = ../MissionDetailViewController.m; sourceTree = "<group>"; };
 		9CF6C9751B72FB00008FA1E3 /* NotificationSettingTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationSettingTableTableViewController.h; sourceTree = "<group>"; };
 		9CF6C9761B72FB00008FA1E3 /* NotificationSettingTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationSettingTableTableViewController.m; sourceTree = "<group>"; };
 		9CF6C97B1B730A31008FA1E3 /* EventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventView.h; path = ../EventView.h; sourceTree = "<group>"; };
@@ -126,9 +132,9 @@
 		9C14CDDA1B7F3AD7008EF6C2 /* DataControl */ = {
 			isa = PBXGroup;
 			children = (
-				9C14CDDB1B7F3B03008EF6C2 /* DataModel */,
 				9CE454121B6E4EDC0099F5C8 /* CoreDataManager.h */,
 				9CE454131B6E4EDC0099F5C8 /* CoreDataManager.m */,
+				9C14CDDB1B7F3B03008EF6C2 /* DataModel */,
 			);
 			name = DataControl;
 			sourceTree = "<group>";
@@ -221,10 +227,14 @@
 				9CE454161B6E50490099F5C8 /* PackageListTableViewController.m */,
 				9C14CDE71B802F01008EF6C2 /* PackageAddViewController.h */,
 				9C14CDE81B802F01008EF6C2 /* PackageAddViewController.m */,
-				9CF6C9721B72F0FB008FA1E3 /* MIssionDetailViewController.h */,
-				9CF6C9731B72F0FB008FA1E3 /* MIssionDetailViewController.m */,
+				9CF6C9721B72F0FB008FA1E3 /* MissionDetailViewController.h */,
+				9CF6C9731B72F0FB008FA1E3 /* MissionDetailViewController.m */,
 				9CF6C98A1B774B36008FA1E3 /* MissionDetailTableViewController.h */,
 				9CF6C98B1B774B36008FA1E3 /* MissionDetailTableViewController.m */,
+				0DE298DD1B85EBF800A48602 /* MissionListTableViewController.h */,
+				0DE298DE1B85EBF800A48602 /* MissionListTableViewController.m */,
+				0DE298E01B85F23500A48602 /* MissionAddViewController.h */,
+				0DE298E11B85F23500A48602 /* MissionAddViewController.m */,
 				9CF6C9901B77606B008FA1E3 /* AccumulatedBonusTableViewController.h */,
 				9CF6C9911B77606B008FA1E3 /* AccumulatedBonusTableViewController.m */,
 				9CF6C9751B72FB00008FA1E3 /* NotificationSettingTableTableViewController.h */,
@@ -359,9 +369,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE298E21B85F23500A48602 /* MissionAddViewController.m in Sources */,
 				9CE454141B6E4EDC0099F5C8 /* CoreDataManager.m in Sources */,
 				9C14CDCA1B7EDC70008EF6C2 /* MissionAlertTableViewCell.m in Sources */,
-				9CF6C9741B72F0FB008FA1E3 /* MIssionDetailViewController.m in Sources */,
+				9CF6C9741B72F0FB008FA1E3 /* MissionDetailViewController.m in Sources */,
 				9C14CDD91B7F3ABD008EF6C2 /* MissionRecord.m in Sources */,
 				9CE454171B6E50490099F5C8 /* PackageListTableViewController.m in Sources */,
 				9C14CDEA1B802F01008EF6C2 /* PackageAddViewController.m in Sources */,
@@ -377,6 +388,7 @@
 				9CF6C9921B77606B008FA1E3 /* AccumulatedBonusTableViewController.m in Sources */,
 				9C14CDD31B7F3ABD008EF6C2 /* Package.m in Sources */,
 				9CE4540E1B6E4C6C0099F5C8 /* Mission.xcdatamodeld in Sources */,
+				0DE298DF1B85EBF800A48602 /* MissionListTableViewController.m in Sources */,
 				9CF6C9891B7612EA008FA1E3 /* CircleView.m in Sources */,
 				9CF6C97D1B730A31008FA1E3 /* EventView.m in Sources */,
 				9CE453E91B6E4ABC0099F5C8 /* main.m in Sources */,

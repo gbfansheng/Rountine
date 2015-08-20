@@ -12,11 +12,14 @@
 #import "MissionDetailContentTableViewCell.h"
 #import "MissionAlertTableViewCell.h"
 #import "CoreDataManager.h"
+#import "MissionListTableViewController.h"
+
 @interface MissionDetailTableViewController ()
 {
     CoreDataManager* _coreDataManager;
+    NSArray* _contentArray;
+    UIBarButtonItem* _editItem;
 }
-@property (strong, nonatomic) NSArray* contentArray;
 @end
 
 @implementation MissionDetailTableViewController
@@ -26,6 +29,8 @@
     [super viewDidLoad];
     self.contentArray = @[ @[ @"标题" ], @[ @"本次完成奖励", @"累计奖励", @"完成情况", @"详细内容" ], @[ @"开启提醒", @"提醒时间", @"重复", @"结束重复"] ];
     _coreDataManager = [CoreDataManager sharedCoreDataManager];
+    _editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(editItemClick)];
+    self.navigationItem.rightBarButtonItem = _editItem;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
 
@@ -128,4 +133,9 @@
 //    NSLog(@"Array count :%ld",array.count);
 }
 
+- (void)editItemClick
+{
+    MissionListTableViewController* controller = [[MissionListTableViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
 @end

@@ -20,7 +20,7 @@
         <attribute name="totaltimes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Mission" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="Mission" positionX="-63" positionY="-18" width="128" height="120"/>
         <element name="MissionRecord" positionX="-63" positionY="18" width="128" height="103"/>
         <element name="Package" positionX="-27" positionY="54" width="128" height="103"/>
     </elements>

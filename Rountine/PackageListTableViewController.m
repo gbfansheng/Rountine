@@ -10,6 +10,7 @@
 #import "CoreDataManager.h"
 #import "PackageTableViewCell.h"
 #import "PackageAddViewController.h"
+#import "MissionDetailTableViewController.h"
 
 @interface PackageListTableViewController () {
     CoreDataManager* _coreDataManager;
@@ -25,6 +26,7 @@
     _coreDataManager = [CoreDataManager sharedCoreDataManager];
     _barbuttonItem = [[UIBarButtonItem alloc]initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(barButtonItemClick)];
     self.navigationItem.rightBarButtonItem = _barbuttonItem;
+    NSLog(@"%@",NSStringFromCGSize(self.view.frame.size));
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,9 +64,22 @@
     }
     cell = [tableView dequeueReusableCellWithIdentifier:@"PackageCell"];
     Package* package = [_dataArray objectAtIndex:indexPath.row];
-    cell.packageImageView.image = [UIImage imageNamed:@"testimage"];
+    cell.packageImageView.image = [UIImage imageNamed:@"Testimage"];
     cell.packageLabel.text = package.package;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Package* package = [_dataArray objectAtIndex:indexPath.row];
+    MissionDetailTableViewController* controller = [[MissionDetailTableViewController alloc] init];
+    [controller setPackage:package];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
 }
 
 - (void)barButtonItemClick
