@@ -10,6 +10,7 @@
 
 @interface DetailTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *tagLabel;
 
 @end

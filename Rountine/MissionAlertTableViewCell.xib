@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,27 +15,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf4-FQ-pfF">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf4-FQ-pfF">
                         <rect key="frame" x="8" y="11" width="102" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="102" id="FPj-JO-0Jn"/>
-                            <constraint firstAttribute="height" constant="21" id="zRp-4q-hij"/>
+                            <constraint firstAttribute="width" constant="102" id="4eg-fr-xW7"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IND-TF-FEv">
-                        <rect key="frame" x="271" y="6" width="51" height="31"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="31" id="Kox-YS-ayF"/>
-                            <constraint firstAttribute="width" constant="49" id="XVO-CG-ssk"/>
-                        </constraints>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IND-TF-FEv">
+                        <rect key="frame" x="263" y="6" width="51" height="31"/>
                     </switch>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="centerY" secondItem="IND-TF-FEv" secondAttribute="centerY" id="Akf-Od-H0r"/>
-                    <constraint firstAttribute="centerY" secondItem="Lf4-FQ-pfF" secondAttribute="centerY" id="gn1-1M-7Ow"/>
+                    <constraint firstAttribute="centerY" secondItem="Lf4-FQ-pfF" secondAttribute="centerY" id="Q3O-j3-T2H"/>
+                    <constraint firstItem="IND-TF-FEv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dsO-jA-Ez9"/>
+                    <constraint firstAttribute="centerY" secondItem="IND-TF-FEv" secondAttribute="centerY" id="jc7-QK-KrD"/>
+                    <constraint firstItem="Lf4-FQ-pfF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="tgJ-uc-eEu"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

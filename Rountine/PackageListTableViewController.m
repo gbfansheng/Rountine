@@ -72,7 +72,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Package* package = [_dataArray objectAtIndex:indexPath.row];
-    MissionDetailTableViewController* controller = [[MissionDetailTableViewController alloc] init];
+    MissionDetailTableViewController* controller = [[MissionDetailTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
     [controller setPackage:package];
     [self.navigationController pushViewController:controller animated:YES];
 }

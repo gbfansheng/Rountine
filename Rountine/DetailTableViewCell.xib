@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,29 +15,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="本次完成奖励" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1z-X4-2UM">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本次完成奖励" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1z-X4-2UM">
                         <rect key="frame" x="8" y="11" width="102" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="m5h-Vv-kuf"/>
-                            <constraint firstAttribute="width" constant="102" id="rMe-TC-ebd"/>
+                            <constraint firstAttribute="width" constant="102" id="fxd-qs-MAJ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oG4-X5-Z1W">
-                        <rect key="frame" x="119" y="11" width="180" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jg-QQ-1ub">
+                        <rect key="frame" x="118" y="11" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="centerY" secondItem="oG4-X5-Z1W" secondAttribute="centerY" id="S0Z-Dp-6KH"/>
+                    <constraint firstAttribute="centerY" secondItem="6Jg-QQ-1ub" secondAttribute="centerY" id="28w-Qu-D4O"/>
+                    <constraint firstAttribute="centerY" secondItem="M1z-X4-2UM" secondAttribute="centerY" id="3Ud-No-dVZ"/>
+                    <constraint firstItem="6Jg-QQ-1ub" firstAttribute="leading" secondItem="M1z-X4-2UM" secondAttribute="leading" constant="110" id="c6S-TR-HTZ"/>
+                    <constraint firstItem="M1z-X4-2UM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cjy-72-OzX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="contentLabel" destination="oG4-X5-Z1W" id="wCJ-iE-xRD"/>
+                <outlet property="contentLabel" destination="6Jg-QQ-1ub" id="YIt-4m-TIM"/>
                 <outlet property="tagLabel" destination="M1z-X4-2UM" id="bbG-5S-VYi"/>
             </connections>
         </tableViewCell>

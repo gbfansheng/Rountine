@@ -124,6 +124,7 @@ static CoreDataManager* _instance;
     if (![context save:&error]) {
         NSLog(@"获取任务错误：%@", [error localizedDescription]);
     }
+    NSLog(@"fetchedobjects:%ld",fetchedObjects.count);
     return fetchedObjects;
 }
 
@@ -182,15 +183,17 @@ static CoreDataManager* _instance;
 }
 
 - (NSString*)insertMissionWithDetail:(NSString *)detail
-                       package:(NSString *)package
-                         bonus:(NSString *)bonus
-                       mission:(NSString *)mission
-                      sequence:(NSNumber *)sequence
+                             package:(NSString *)package
+                               bonus:(NSString *)bonus
+                             mission:(NSString *)mission
+                            sequence:(NSNumber *)sequence
+                             repeats:(NSNumber *)repeats
 {
-    NSLog(@"insert mission");
+    NSLog(@"insert mission:%@",mission);
     NSString* resultString;
     NSArray* array = [self fetchWithEntityName:@"Mission" predicate:[NSPredicate predicateWithFormat:@"mission == %@", mission]];
-    if (array == nil || array.count == 0) {
+    NSLog(@"counttt:%ld",array.count);
+    if (array.count < 1) {
         NSManagedObjectContext* context = [self managedObjectContext];
         NSManagedObject* missionObj = [NSEntityDescription insertNewObjectForEntityForName:@"Mission"
                                                                     inManagedObjectContext:context];
@@ -199,7 +202,7 @@ static CoreDataManager* _instance;
         [missionObj setValue:detail forKey:@"detail"];
         [missionObj setValue:bonus forKey:@"bonus"];
         [missionObj setValue:sequence forKey:@"sequence"];
-
+        [missionObj setValue:repeats forKey:@"repeats"];
         NSError* error;
         if (![context save:&error]) {
             NSLog(@"添加任务错误：%@", [error localizedDescription]);
@@ -232,9 +235,10 @@ static CoreDataManager* _instance;
                                   bonus:(NSString *)bonus
                                 mission:(NSString *)mission
                                sequence:(NSNumber *)sequence
+                                repeats:(NSNumber *)repeats
 {
     [self deleteMission:object];
-    [self insertMissionWithDetail:detail package:package bonus:bonus mission:mission sequence:sequence];
+    [self insertMissionWithDetail:detail package:package bonus:bonus mission:mission sequence:sequence repeats:repeats];
     return @"修改任务成功";
 }
 

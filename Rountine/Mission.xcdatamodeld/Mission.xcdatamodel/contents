@@ -5,6 +5,7 @@
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="mission" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="package" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repeats" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="sequence" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <entity name="MissionRecord" representedClassName="MissionRecord" syncable="YES">
@@ -20,7 +21,7 @@
         <attribute name="totaltimes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Mission" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Mission" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="MissionRecord" positionX="-63" positionY="18" width="128" height="103"/>
         <element name="Package" positionX="-27" positionY="54" width="128" height="103"/>
     </elements>

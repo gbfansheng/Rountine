@@ -2,7 +2,7 @@
 //  Mission.m
 //  Rountine
 //
-//  Created by lifei on 15/8/15.
+//  Created by lifei on 15/8/22.
 //  Copyright (c) 2015年 fan. All rights reserved.
 //
 
@@ -11,10 +11,11 @@
 
 @implementation Mission
 
-@dynamic detail;
-@dynamic package;
 @dynamic bonus;
+@dynamic detail;
 @dynamic mission;
+@dynamic package;
 @dynamic sequence;
+@dynamic repeats;
 
 @end

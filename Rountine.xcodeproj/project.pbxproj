@@ -8,16 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0DE298DF1B85EBF800A48602 /* MissionListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE298DE1B85EBF800A48602 /* MissionListTableViewController.m */; };
-		0DE298E21B85F23500A48602 /* MissionAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE298E11B85F23500A48602 /* MissionAddViewController.m */; };
 		9C14CDCA1B7EDC70008EF6C2 /* MissionAlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14CDC81B7EDC70008EF6C2 /* MissionAlertTableViewCell.m */; };
 		9C14CDCB1B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C14CDC91B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib */; };
 		9C14CDD01B7F1D32008EF6C2 /* DataDesign in Resources */ = {isa = PBXBuildFile; fileRef = 9C14CDCF1B7F1D32008EF6C2 /* DataDesign */; };
 		9C14CDD31B7F3ABD008EF6C2 /* Package.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14CDD21B7F3ABD008EF6C2 /* Package.m */; };
 		9C14CDD91B7F3ABD008EF6C2 /* MissionRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14CDD81B7F3ABD008EF6C2 /* MissionRecord.m */; };
-		9C14CDDE1B7F6EB7008EF6C2 /* Mission.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14CDDD1B7F6EB7008EF6C2 /* Mission.m */; };
 		9C14CDE21B80251D008EF6C2 /* PackageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14CDE01B80251D008EF6C2 /* PackageTableViewCell.m */; };
 		9C14CDE31B80251D008EF6C2 /* PackageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C14CDE11B80251D008EF6C2 /* PackageTableViewCell.xib */; };
 		9C14CDEA1B802F01008EF6C2 /* PackageAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14CDE81B802F01008EF6C2 /* PackageAddViewController.m */; };
+		9C8D18F81B92F981000D109D /* PickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D18F61B92F981000D109D /* PickerTableViewCell.m */; };
+		9C8D18F91B92F981000D109D /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8D18F71B92F981000D109D /* PickerTableViewCell.xib */; };
+		9CD88BE91B8817C700055587 /* Mission.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD88BE81B8817C700055587 /* Mission.m */; };
+		9CD88BEC1B881C5700055587 /* MissionCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD88BEB1B881C5700055587 /* MissionCreateViewController.m */; };
+		9CD88BF51B883EAF00055587 /* MissionCreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD88BF41B883EAF00055587 /* MissionCreateViewController.xib */; };
+		9CD88BF91B88445400055587 /* MissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD88BF71B88445400055587 /* MissionViewController.m */; };
+		9CD88BFA1B88445400055587 /* MissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD88BF81B88445400055587 /* MissionViewController.xib */; };
 		9CE453E91B6E4ABC0099F5C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE453E81B6E4ABC0099F5C8 /* main.m */; };
 		9CE453EC1B6E4ABC0099F5C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE453EB1B6E4ABC0099F5C8 /* AppDelegate.m */; };
 		9CE453EF1B6E4ABC0099F5C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE453EE1B6E4ABC0099F5C8 /* ViewController.m */; };
@@ -28,7 +33,6 @@
 		9CE4540E1B6E4C6C0099F5C8 /* Mission.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CE4540C1B6E4C6C0099F5C8 /* Mission.xcdatamodeld */; };
 		9CE454141B6E4EDC0099F5C8 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE454131B6E4EDC0099F5C8 /* CoreDataManager.m */; };
 		9CE454171B6E50490099F5C8 /* PackageListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE454161B6E50490099F5C8 /* PackageListTableViewController.m */; };
-		9CF6C9741B72F0FB008FA1E3 /* MissionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6C9731B72F0FB008FA1E3 /* MissionDetailViewController.m */; };
 		9CF6C9771B72FB00008FA1E3 /* NotificationSettingTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6C9761B72FB00008FA1E3 /* NotificationSettingTableTableViewController.m */; };
 		9CF6C97D1B730A31008FA1E3 /* EventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6C97C1B730A31008FA1E3 /* EventView.m */; };
 		9CF6C9891B7612EA008FA1E3 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF6C9881B7612EA008FA1E3 /* CircleView.m */; };
@@ -54,8 +58,6 @@
 /* Begin PBXFileReference section */
 		0DE298DD1B85EBF800A48602 /* MissionListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionListTableViewController.h; sourceTree = "<group>"; };
 		0DE298DE1B85EBF800A48602 /* MissionListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionListTableViewController.m; sourceTree = "<group>"; };
-		0DE298E01B85F23500A48602 /* MissionAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionAddViewController.h; sourceTree = "<group>"; };
-		0DE298E11B85F23500A48602 /* MissionAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionAddViewController.m; sourceTree = "<group>"; };
 		9C14CDC71B7EDC70008EF6C2 /* MissionAlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionAlertTableViewCell.h; sourceTree = "<group>"; };
 		9C14CDC81B7EDC70008EF6C2 /* MissionAlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionAlertTableViewCell.m; sourceTree = "<group>"; };
 		9C14CDC91B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionAlertTableViewCell.xib; sourceTree = "<group>"; };
@@ -64,13 +66,22 @@
 		9C14CDD21B7F3ABD008EF6C2 /* Package.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Package.m; path = ../Package.m; sourceTree = "<group>"; };
 		9C14CDD71B7F3ABD008EF6C2 /* MissionRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MissionRecord.h; path = ../MissionRecord.h; sourceTree = "<group>"; };
 		9C14CDD81B7F3ABD008EF6C2 /* MissionRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MissionRecord.m; path = ../MissionRecord.m; sourceTree = "<group>"; };
-		9C14CDDC1B7F6EB7008EF6C2 /* Mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mission.h; path = ../Mission.h; sourceTree = "<group>"; };
-		9C14CDDD1B7F6EB7008EF6C2 /* Mission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mission.m; path = ../Mission.m; sourceTree = "<group>"; };
 		9C14CDDF1B80251D008EF6C2 /* PackageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageTableViewCell.h; sourceTree = "<group>"; };
 		9C14CDE01B80251D008EF6C2 /* PackageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageTableViewCell.m; sourceTree = "<group>"; };
 		9C14CDE11B80251D008EF6C2 /* PackageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackageTableViewCell.xib; sourceTree = "<group>"; };
 		9C14CDE71B802F01008EF6C2 /* PackageAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PackageAddViewController.h; path = ../PackageAddViewController.h; sourceTree = "<group>"; };
 		9C14CDE81B802F01008EF6C2 /* PackageAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PackageAddViewController.m; path = ../PackageAddViewController.m; sourceTree = "<group>"; };
+		9C8D18F51B92F981000D109D /* PickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTableViewCell.h; sourceTree = "<group>"; };
+		9C8D18F61B92F981000D109D /* PickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTableViewCell.m; sourceTree = "<group>"; };
+		9C8D18F71B92F981000D109D /* PickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
+		9CD88BE71B8817C700055587 /* Mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mission.h; sourceTree = "<group>"; };
+		9CD88BE81B8817C700055587 /* Mission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mission.m; sourceTree = "<group>"; };
+		9CD88BEA1B881C5700055587 /* MissionCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MissionCreateViewController.h; path = ../MissionCreateViewController.h; sourceTree = "<group>"; };
+		9CD88BEB1B881C5700055587 /* MissionCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MissionCreateViewController.m; path = ../MissionCreateViewController.m; sourceTree = "<group>"; };
+		9CD88BF41B883EAF00055587 /* MissionCreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MissionCreateViewController.xib; path = ../MissionCreateViewController.xib; sourceTree = "<group>"; };
+		9CD88BF61B88445400055587 /* MissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionViewController.h; sourceTree = "<group>"; };
+		9CD88BF71B88445400055587 /* MissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionViewController.m; sourceTree = "<group>"; };
+		9CD88BF81B88445400055587 /* MissionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionViewController.xib; sourceTree = "<group>"; };
 		9CE453E31B6E4ABC0099F5C8 /* Rountine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rountine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE453E71B6E4ABC0099F5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE453E81B6E4ABC0099F5C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,8 +100,6 @@
 		9CE454131B6E4EDC0099F5C8 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		9CE454151B6E50490099F5C8 /* PackageListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageListTableViewController.h; sourceTree = "<group>"; };
 		9CE454161B6E50490099F5C8 /* PackageListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageListTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		9CF6C9721B72F0FB008FA1E3 /* MissionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MissionDetailViewController.h; path = ../MissionDetailViewController.h; sourceTree = "<group>"; };
-		9CF6C9731B72F0FB008FA1E3 /* MissionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MissionDetailViewController.m; path = ../MissionDetailViewController.m; sourceTree = "<group>"; };
 		9CF6C9751B72FB00008FA1E3 /* NotificationSettingTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationSettingTableTableViewController.h; sourceTree = "<group>"; };
 		9CF6C9761B72FB00008FA1E3 /* NotificationSettingTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationSettingTableTableViewController.m; sourceTree = "<group>"; };
 		9CF6C97B1B730A31008FA1E3 /* EventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventView.h; path = ../EventView.h; sourceTree = "<group>"; };
@@ -142,8 +151,8 @@
 		9C14CDDB1B7F3B03008EF6C2 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				9C14CDDC1B7F6EB7008EF6C2 /* Mission.h */,
-				9C14CDDD1B7F6EB7008EF6C2 /* Mission.m */,
+				9CD88BE71B8817C700055587 /* Mission.h */,
+				9CD88BE81B8817C700055587 /* Mission.m */,
 				9C14CDD71B7F3ABD008EF6C2 /* MissionRecord.h */,
 				9C14CDD81B7F3ABD008EF6C2 /* MissionRecord.m */,
 				9C14CDD11B7F3ABD008EF6C2 /* Package.h */,
@@ -220,21 +229,23 @@
 		9CF6C9A51B778F7B008FA1E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9CF6C9A61B778F8D008FA1E3 /* New Group */,
+				9CF6C9A61B778F8D008FA1E3 /* Cell */,
 				9CE453ED1B6E4ABC0099F5C8 /* ViewController.h */,
 				9CE453EE1B6E4ABC0099F5C8 /* ViewController.m */,
 				9CE454151B6E50490099F5C8 /* PackageListTableViewController.h */,
 				9CE454161B6E50490099F5C8 /* PackageListTableViewController.m */,
 				9C14CDE71B802F01008EF6C2 /* PackageAddViewController.h */,
 				9C14CDE81B802F01008EF6C2 /* PackageAddViewController.m */,
-				9CF6C9721B72F0FB008FA1E3 /* MissionDetailViewController.h */,
-				9CF6C9731B72F0FB008FA1E3 /* MissionDetailViewController.m */,
 				9CF6C98A1B774B36008FA1E3 /* MissionDetailTableViewController.h */,
 				9CF6C98B1B774B36008FA1E3 /* MissionDetailTableViewController.m */,
 				0DE298DD1B85EBF800A48602 /* MissionListTableViewController.h */,
 				0DE298DE1B85EBF800A48602 /* MissionListTableViewController.m */,
-				0DE298E01B85F23500A48602 /* MissionAddViewController.h */,
-				0DE298E11B85F23500A48602 /* MissionAddViewController.m */,
+				9CD88BEA1B881C5700055587 /* MissionCreateViewController.h */,
+				9CD88BEB1B881C5700055587 /* MissionCreateViewController.m */,
+				9CD88BF41B883EAF00055587 /* MissionCreateViewController.xib */,
+				9CD88BF61B88445400055587 /* MissionViewController.h */,
+				9CD88BF71B88445400055587 /* MissionViewController.m */,
+				9CD88BF81B88445400055587 /* MissionViewController.xib */,
 				9CF6C9901B77606B008FA1E3 /* AccumulatedBonusTableViewController.h */,
 				9CF6C9911B77606B008FA1E3 /* AccumulatedBonusTableViewController.m */,
 				9CF6C9751B72FB00008FA1E3 /* NotificationSettingTableTableViewController.h */,
@@ -243,7 +254,7 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		9CF6C9A61B778F8D008FA1E3 /* New Group */ = {
+		9CF6C9A61B778F8D008FA1E3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				9CF6C9931B777E11008FA1E3 /* TitleTableViewCell.h */,
@@ -260,8 +271,11 @@
 				9C14CDDF1B80251D008EF6C2 /* PackageTableViewCell.h */,
 				9C14CDE01B80251D008EF6C2 /* PackageTableViewCell.m */,
 				9C14CDE11B80251D008EF6C2 /* PackageTableViewCell.xib */,
+				9C8D18F51B92F981000D109D /* PickerTableViewCell.h */,
+				9C8D18F61B92F981000D109D /* PickerTableViewCell.m */,
+				9C8D18F71B92F981000D109D /* PickerTableViewCell.xib */,
 			);
-			name = "New Group";
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +327,7 @@
 				TargetAttributes = {
 					9CE453E21B6E4ABC0099F5C8 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = DYB4RP29K2;
 					};
 					9CE453FB1B6E4ABD0099F5C8 = {
 						CreatedOnToolsVersion = 6.4;
@@ -345,12 +360,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C14CDE31B80251D008EF6C2 /* PackageTableViewCell.xib in Resources */,
+				9CD88BFA1B88445400055587 /* MissionViewController.xib in Resources */,
+				9C8D18F91B92F981000D109D /* PickerTableViewCell.xib in Resources */,
 				9CE453F21B6E4ABC0099F5C8 /* Main.storyboard in Resources */,
 				9CF6C9A41B778E2F008FA1E3 /* MissionDetailContentTableViewCell.xib in Resources */,
 				9CE453F71B6E4ABD0099F5C8 /* LaunchScreen.xib in Resources */,
 				9C14CDCB1B7EDC70008EF6C2 /* MissionAlertTableViewCell.xib in Resources */,
 				9C14CDD01B7F1D32008EF6C2 /* DataDesign in Resources */,
 				9CF6C99A1B777EDC008FA1E3 /* DetailTableViewCell.xib in Resources */,
+				9CD88BF51B883EAF00055587 /* MissionCreateViewController.xib in Resources */,
 				9CE453F41B6E4ABD0099F5C8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,24 +387,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE298E21B85F23500A48602 /* MissionAddViewController.m in Sources */,
 				9CE454141B6E4EDC0099F5C8 /* CoreDataManager.m in Sources */,
 				9C14CDCA1B7EDC70008EF6C2 /* MissionAlertTableViewCell.m in Sources */,
-				9CF6C9741B72F0FB008FA1E3 /* MissionDetailViewController.m in Sources */,
 				9C14CDD91B7F3ABD008EF6C2 /* MissionRecord.m in Sources */,
 				9CE454171B6E50490099F5C8 /* PackageListTableViewController.m in Sources */,
+				9CD88BE91B8817C700055587 /* Mission.m in Sources */,
 				9C14CDEA1B802F01008EF6C2 /* PackageAddViewController.m in Sources */,
 				9CF6C9A31B778E2F008FA1E3 /* MissionDetailContentTableViewCell.m in Sources */,
 				9CF6C9951B777E11008FA1E3 /* TitleTableViewCell.m in Sources */,
 				9CF6C9771B72FB00008FA1E3 /* NotificationSettingTableTableViewController.m in Sources */,
 				9CF6C9991B777EDC008FA1E3 /* DetailTableViewCell.m in Sources */,
+				9CD88BF91B88445400055587 /* MissionViewController.m in Sources */,
 				9CF6C98C1B774B36008FA1E3 /* MissionDetailTableViewController.m in Sources */,
-				9C14CDDE1B7F6EB7008EF6C2 /* Mission.m in Sources */,
 				9CE453EF1B6E4ABC0099F5C8 /* ViewController.m in Sources */,
 				9C14CDE21B80251D008EF6C2 /* PackageTableViewCell.m in Sources */,
 				9CE453EC1B6E4ABC0099F5C8 /* AppDelegate.m in Sources */,
 				9CF6C9921B77606B008FA1E3 /* AccumulatedBonusTableViewController.m in Sources */,
 				9C14CDD31B7F3ABD008EF6C2 /* Package.m in Sources */,
+				9C8D18F81B92F981000D109D /* PickerTableViewCell.m in Sources */,
+				9CD88BEC1B881C5700055587 /* MissionCreateViewController.m in Sources */,
 				9CE4540E1B6E4C6C0099F5C8 /* Mission.xcdatamodeld in Sources */,
 				0DE298DF1B85EBF800A48602 /* MissionListTableViewController.m in Sources */,
 				9CF6C9891B7612EA008FA1E3 /* CircleView.m in Sources */,
@@ -517,10 +536,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Rountine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -528,10 +550,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Rountine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

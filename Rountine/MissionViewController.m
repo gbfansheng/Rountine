@@ -1,18 +1,18 @@
 //
-//  MissionDetailViewController.m
+//  MissionViewController.m
 //  Rountine
 //
-//  Created by lifei on 15/8/30.
+//  Created by lifei on 15/8/22.
 //  Copyright (c) 2015年 fan. All rights reserved.
 //
 
-#import "MissionDetailViewController.h"
+#import "MissionViewController.h"
 
-@interface MissionDetailViewController ()
+@interface MissionViewController ()
 
 @end
 
-@implementation MissionDetailViewController
+@implementation MissionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

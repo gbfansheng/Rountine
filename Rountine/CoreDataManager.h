@@ -40,7 +40,8 @@
                              package:(NSString *)package
                                bonus:(NSString *)bonus
                              mission:(NSString *)mission
-                            sequence:(NSNumber *)sequence;
+                            sequence:(NSNumber *)sequence
+                             repeats:(NSNumber *)repeats;
 - (NSString*)deleteMission:(NSManagedObject*)missionObj;
 - (NSString*)updateMissionWithOldObject:(NSManagedObject*)object
                                  detail:(NSString *)detail

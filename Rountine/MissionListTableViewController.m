@@ -9,9 +9,10 @@
 #import "MissionListTableViewController.h"
 #import "CoreDataManager.h"
 #import "MissionListTableViewController.h"
+#import "MissionCreateViewController.h"
+#import "MissionViewController.h"
 
-@interface MissionListTableViewController ()
-{
+@interface MissionListTableViewController () {
     CoreDataManager* _coreDataManager;
     NSArray* _missionArray;
     UIBarButtonItem* _addItem;
@@ -20,56 +21,63 @@
 
 @implementation MissionListTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     _coreDataManager = [CoreDataManager sharedCoreDataManager];
     _addItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(addItemClick)];
+    self.navigationItem.rightBarButtonItem = _addItem;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    _missionArray = [_coreDataManager fetchWithEntityName:@"Mission" predicate:[NSPredicate predicateWithFormat:@"mission == %@",_package.package]];
+    NSLog(@"package:%@",_package.package);
+    _missionArray = [_coreDataManager fetchWithEntityName:@"Mission" predicate:[NSPredicate predicateWithFormat:@"package == %@", _package.package]];
+    NSLog(@"missionArray.count = %ld",_missionArray.count);
+    [self.tableView reloadData];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView*)tableView
+{
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+- (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _missionArray.count;
 }
 
 - (void)addItemClick
 {
-    MissionListTableViewController* controller = [[MissionListTableViewController alloc] init];
+    MissionCreateViewController* controller = [[MissionCreateViewController alloc]initWithNibName:@"MissionCreateViewController" bundle:nil];
+    [controller setPackage:_package];
+//    MissionViewController* controller = [[MissionViewController alloc]initWithNibName:@"MissionViewController" bundle:nil];
     [self.navigationController pushViewController:controller animated:YES];
 }
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:  forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"missionListCell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"missionListCell"];
+        cell.textLabel.font = [UIFont systemFontOfSize:17];
+    }
+    Mission* mission = [_missionArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = mission.mission;
     return cell;
 }
-*/
-
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
